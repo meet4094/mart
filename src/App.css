@@ -1,0 +1,21 @@
+/* navbar */
+.navbar-nav a{
+    font-size: 18px;
+}
+.card{
+    border-radius: 7px; 
+}
+@media (max-width: 400px){
+    .buttons .btn{
+        font-size: 0.55rem;
+        width: 62px;
+    }
+    .hero img{
+        height: 500px;
+    }
+    .card .card-img-top{
+        height: 18rem;
+    }
+}
+
+    
