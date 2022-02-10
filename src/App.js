@@ -6,7 +6,6 @@ import Products from './component/Products';
 import Contact from './component/Contact';
 import Login from './component/Login';
 import Register from './component/Register';
-import Cart from './component/Cart';
 import Product from './component/Product';
 import { Route, Switch } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
@@ -24,7 +23,6 @@ const App = () => {
         <Route exact path='/contact' component={Contact}></Route>
         <Route exact path='/login' component={Login}></Route>
         <Route exact path='/register' component={Register}></Route>
-        <Route exact path='/cart' component={Cart}></Route>
       </Switch>
     </BrowserRouter>
 
