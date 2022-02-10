@@ -1,13 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+// import Product from './Product';
 
 const Navbar = () => {
     const state = useSelector((state) => state.handleCart)
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
                 <div className="container">
-                    <a className="navbar-brand fw-bold fs-2" href="/">LA COLLECTION</a>
+                    <a className="navbar-brand fw-bold fs-2" href="/">COLLECTION</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -37,7 +38,7 @@ const Navbar = () => {
                             <a href='/Register' className='btn btn-outline-dark ms-2'>Register
                                 {/* <i className="fas fa-user-plus"></i> */}
                             </a>
-                            <a href='/Cart' className='btn btn-outline-dark ms-2'>Cart (0)
+                            <a href='/Cart' className='btn btn-outline-dark ms-2'>Cart ({state})
                                 {/* <i className="fas fa-shopping-cart"></i> */}
                             </a>
                         </div>
@@ -47,5 +48,4 @@ const Navbar = () => {
         </div>
     )
 };
-
 export default Navbar;

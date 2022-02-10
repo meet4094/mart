@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch} from 'react-redux';
-import { addCart } from '../redux/action'; 
+import { useDispatch } from 'react-redux';
+import { addCart } from '../redux/action';
 import { useParams } from 'react-router-dom';
-import Skeleton from 'react-loading-skeleton';  
+import Skeleton from 'react-loading-skeleton';
 
 const Product = () => {
 
@@ -11,7 +11,7 @@ const Product = () => {
     const [loading, setLoading] = useState(false);
 
     const dispatch = useDispatch();
-    const addProduct = (product) =>{
+    const addProduct = (product) => {
         dispatch(addCart(product));
     }
 
@@ -19,8 +19,8 @@ const Product = () => {
         const getProduct = async () => {
             setLoading(true);
             const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-            setProduct(await response.json());
-            setLoading(false);  
+            setProduct(await response.json());                  
+            setLoading(false);
         }
         getProduct();
     }, []);
@@ -28,14 +28,14 @@ const Product = () => {
     const Loading = () => {
         return (
             <>
-                <div className="col-md-6" style={{lineHeight:2}}>
-                    <Skeleton height={50}  width={300}/>
+                <div className="col-md-6" style={{ lineHeight: 2 }}>
+                    <Skeleton height={50} width={300} />
                     <Skeleton height={75} />
-                    <Skeleton height={25} width={150}/>
+                    <Skeleton height={25} width={150} />
                     <Skeleton height={50} />
                     <Skeleton height={150} />
-                    <Skeleton height={50} width={100}/>
-                    <Skeleton height={50} width={100} style={{marginleft:6}}/>
+                    <Skeleton height={50} width={100} />
+                    <Skeleton height={50} width={100} style={{ marginleft: 6 }} />
                 </div>
             </>
         )
@@ -59,7 +59,7 @@ const Product = () => {
                         ${product.price}
                     </h3>
                     <p className='lead'>{product.discription}</p>
-                    <button className='btn btn-outline-dark px-4 py-2'onClick={() => addProduct(product)}>Add to Cart</button>
+                    <button className='btn btn-outline-dark px-4 py-2' onClick={() => addProduct(product)}>Add to Cart</button>
                     <a href='/Cart' className='btn btn-dark ms-2 py-2 px-3'>Go to Cart</a>
                 </div>
             </>
@@ -75,5 +75,4 @@ const Product = () => {
         </div>
     );
 };
-
 export default Product;

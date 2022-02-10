@@ -5,6 +5,177 @@
 .card{
     border-radius: 7px; 
 }
+.about-img{
+    width: 100%;
+    height: 90vh;
+}
+.container-about{
+    margin-top: -41rem;
+}
+.about{
+    width: 50%;
+    height: 190 px;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: inset;
+}
+.about h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* contact */
+.contact-img{
+    width: 100%;
+    height: 90vh;
+}
+.Contactus-section{
+    margin: -37rem 0;
+}
+.container-leftside img{
+    width: 80%;
+    height: 23rem;
+}
+.container-leftside .main-hero-para-two{
+    margin-left: 0rem !important;
+    width: 75%;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+.contact-input-feild{
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.container-rightside from.form-control{
+    border: 1px solid rgb(245, 220, 220);
+    border-radius: 1rem;    
+    font-size: 1.5rem;
+    font-weight:lighter;
+}
+.from-checkbox-style{
+    margin: 3.85rem 0;
+}
+.btn-style{
+    color:black;
+    border-color: black;
+}
+.btn-style:hover{
+    background-color: black;
+    color: white;
+}
+.img-login{
+    width: 100%;
+    height: 90vh;
+}
+.login h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -5rem;
+    color: black;
+    font-weight: 600;
+}
+.login h3{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3rem;
+    color: black;
+}
+.container-login{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: -35rem;   
+}
+.login-from .form-control{
+    width:20rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background: transparent;
+    font-weight:600;
+    color: white;
+}
+.login .btn-style{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+.from-checkbox-style{
+    margin-top: 1.8rem;
+}
+.para{
+    color:black;
+    margin-left: -12rem;
+    font-weight: 500;
+}
+/* .btn-forgate{
+    margin-right: -15rem;
+    background: transparent;
+    border: none;
+    color: white; 
+} */
+/* .btn-forgate:hover{
+    color: rgb(236, 185, 122);
+} */
+.login h5{
+    color: black;
+    font-weight: 600;
+}
+.fac-twi .btn-style{
+    border-radius: 0.5rem;
+    width: 46%;
+    margin-right: 0.7rem;
+}
+
+
+/* register */
+.register-img{
+    width: 100%;
+    height: 90vh;
+}
+.register {
+    margin-top: -38rem;
+    color: black;
+    margin-left: 30rem;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+.main-container h2{
+    margin-bottom: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.register .main-container{
+    width: 45%;
+}
+.register-input-feild .form-control{
+    margin-bottom: 2rem;
+}
+.main-container .btn-style{
+    font-weight: 500;
+}
+.footer{
+    text-align: center;
+}
+.footer img{
+    width: 1.3rem;
+    margin: 0.5rem 1rem 1rem 0.5rem;
+    cursor: pointer;
+    transition: 3s ease;
+}
+
+
 @media (max-width: 400px){
     .buttons .btn{
         font-size: 0.55rem;

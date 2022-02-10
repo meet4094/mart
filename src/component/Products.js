@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
+import Footer from './Footer';
 
 const Products = () => {
 
@@ -86,7 +87,8 @@ const Products = () => {
                     {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
-        </div>
+            {/* // <Footer/> */}
+        </div>        
     );
 };
 
