@@ -98,21 +98,26 @@
     display: flex;
     margin-top: -35rem;   
 }
+
+/* login */
+
+
 .login-from .form-control{
     width:20rem;
     margin-top: 2rem;
-    border-radius: 1rem;
-    background: transparent;
     font-weight:600;
     color: white;
 }
 .login .btn-style{
     margin-top: 2rem;
-    border-radius: 1rem;
     font-weight: 500;
 }
 .from-checkbox-style{
     margin-top: 1.8rem;
+}
+.register-input-feildfemale{
+    margin-top:2.55rem;
+    margin-left: -2.5rem;
 }
 .para{
     color:black;
@@ -175,6 +180,8 @@
     transition: 3s ease;
 }
 
+/* cart */
+
 
 @media (max-width: 400px){
     .buttons .btn{
@@ -187,6 +194,35 @@
     .card .card-img-top{
         height: 18rem;
     }
+    .product-image img{
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+    }
+    .product-any{
+        margin-left: 1rem;
+    }
+    .product-any .text-uppercase{
+        font-size: 0.8rem;
+    }
+    .product-any h1{
+        font-size:1.5rem;
+    }
+    .product-any h3{
+        font-size: 1.2rem;
+    }
+    .product-any .btn-outline-dark{
+        font-size: 0.75rem;
+        width: 7rem;
+        height: 2.3rem;
+    }
+    .product-any .btn-dark{
+        font-size: 0.75rem;
+        width: 7rem;
+        height: 2.3rem;
+    }
+    .product-any .lead{
+        font-size: 0.8rem;
+    }
 }
-
-    
